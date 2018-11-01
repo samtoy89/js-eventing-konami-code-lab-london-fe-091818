@@ -6,12 +6,12 @@ function init() {
 }
 
 
-  const alphabet = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+  const alphabet = [65, 66, 67];
   let index = 0;
   
   function onKeyDownHandler(e) {
   const key = parseInt(e.detail || e.which);
- 
+  console.log(key, index);
   if (key === alphabet[index]) {
     index++;
  
